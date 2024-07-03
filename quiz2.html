@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Quiz</title>
+  <link rel="stylesheet" type="text/css" href="style.css">
+<style>
+  body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+header {
+  background-color: #333;
+  color: #fff;
+  padding: 20px;
+  text-align: center;
+}
+
+section {
+  padding: 50px;
+}
+
+h2 {
+  color: #333;
+  text-align: center;
+}
+
+form {
+  margin-bottom: 20px;
+}
+
+label {
+  display: block;
+  margin-bottom: 10px;
+}
+
+input[type="radio"] {
+  margin-right: 10px;
+}
+
+.button {
+  display: inline-block;
+  background-color: #333;
+  color: #fff;
+  padding: 10px 20px;
+  text-decoration: none;
+}
+
+.hidden {
+  display: none;
+}
+.button {
+      padding: 12px 24px;
+      background-color: #337ab7;
+      color: #fff;
+      font-size: 16px;
+      border: none;
+      border-radius: 4px;
+      cursor: pointer;
+      transition: background-color 0.3s ease;
+    }
+
+    .button:hover {
+      background-color: #23527c;
+    }.footer{
+      justify-content: center;
+      text-align: center;
+      background-color:  brown;
+      height: 40px;
+      padding: 20px;
+    }
+</style>
+    
+</head>
+<body background ="https://tse1.mm.bing.net/th?id=OIP.nNV2kfvntSB8M5LF86qEjQHaFN&pid=Api&P=0&h=180">
+  <header>
+    <h1>Level 2</h1>
+  </header>
+
+  <section id="quiz">
+    <h2>Welcome to the Quiz!</h2>
+    <p>Please answer the following questions:</p>
+    <form>
+      <h3>Question 1:</h3>
+      <p>How are String represented in memory in C?</p>
+      <label>
+        <input type="radio" name="q1" value="An array of characters">
+        An array of characters
+      </label>
+      <label>
+        <input type="radio" name="q1" value="The object of some class">
+        The object of some class
+      </label>
+      <label>
+        <input type="radio" name="q1" value="same as other primitive data types">
+        same as other primitive data types
+      </label>
+      <label>
+        <input type="radio" name="q1" value="linkedlist of characters">
+        linkedlist of characters
+      </label>
+      <h3>Question 2:</h3>
+      <p>What is the output of the following code snippet?</p>  
+
+       <p>  #include<stdio.h>
+       </p>
+        int main()
+         {
+            int a[] = {1, 2, 3, 4};
+            int sum = 0;
+            for(int i = 0; i < 4; i++) {
+                sum += a[i];
+            }
+            printf("%d", sum);
+            return 0;
+        }        
+        </p>
+      <label>
+        <input type="radio" name="q2" value="1">
+        1
+      </label>
+      <label>
+        <input type="radio" name="q2" value="4">
+       4
+      </label>
+      <label>
+        <input type="radio" name="q2" value="20">
+        20
+      </label>
+      <label>
+        <input type="radio" name="q2" value="10">
+        10
+      </label>
+      <h3>Question 3:</h3>
+      <p> 
+        Which of the following is an exit controlled loop?</p>
+      <label>
+        <input type="radio" name="q3" value="while loop">
+    while loop
+      </label>
+      <label>
+        <input type="radio" name="q3" value=" do while loop">
+        do while loop
+        
+       
+      </label>
+      <label>
+        <input type="radio" name="q4" value="for loop">
+        for loop
+      </label>
+      <label>
+        <input type="radio" name="q4" value="none of the above">
+        none of the above
+      </label>
+
+      <a href="submit.html" class="button"> 
+      <input type="submit" value="Submit" class="button">
+    </a>
+    </form>
+  </section>
+
+  <section id="results" class="hidden">
+    <h2>Quiz Results</h2>
+    
+  </section>
+
+  <footer class="footer">
+    <p>&copy; 2024 Quiz</p>
+  </footer>
+  
+</body>
+</html>

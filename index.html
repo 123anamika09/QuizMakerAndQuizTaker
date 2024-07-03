@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Quiz Maker and Taker</title>
+
+</head>
+<style>
+    body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  background-color: #f4f4f4;
+}
+
+.centered {
+  text-align: center;
+}
+
+.hidden {
+  display: none;
+}
+
+#userChoice, .quiz-maker, #quiz, #result {
+  width: 80%;
+  max-width: 600px;
+  background: #fff;
+  padding: 20px;
+  margin: 20px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  border-radius: 10px;
+}
+
+h2 {
+  margin-top: 0;
+}
+
+label {
+  display: block;
+  margin: 10px 0;
+}
+
+input[type="text"] {
+  width: calc(100% - 20px);
+  padding: 10px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+  margin-bottom: 10px;
+}
+
+button {
+  padding: 10px 20px;
+  margin: 10px 5px;
+  border: none;
+  border-radius: 25px;
+  background-color: #007BFF;
+  color: white;
+  cursor: pointer;
+  transition: background-color 0.3s, box-shadow 0.3s;
+}
+
+button:hover {
+  background-color: #0056b3;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+#retry, #showAnswer {
+  display: none;
+}
+</style>
+<body style="background-color: cadetblue;">
+  <div id="userChoice" class="centered">
+    <h2>Hello Viewers! </h2>
+    <h1>Do you want to Give Quiz or Take Quiz</h1>
+    <button id="quizMakerButton"> <a href="quizMaker.html" >Quiz Maker</a></button>
+    <button id="quizTakerButton"><a href="quiz1.html">Quiz Taker</a> </button>
+  </div>
+
+  
+</body>
+</html>
